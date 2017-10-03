@@ -1,0 +1,1 @@
+C:\迅雷下载\Projects\Lab1-DataBinding\Lab1-DataBinding\Lab1-TwoWayDataBinding.csproj;x86

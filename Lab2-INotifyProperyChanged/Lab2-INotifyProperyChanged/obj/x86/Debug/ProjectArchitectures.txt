@@ -1,0 +1,1 @@
+C:\迅雷下载\Projects\Lab2-INotifyProperyChanged\Lab2-INotifyProperyChanged\Lab2INotifyProperyChanged.csproj;x86
