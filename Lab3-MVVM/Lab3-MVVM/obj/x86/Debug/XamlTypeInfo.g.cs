@@ -132,15 +132,23 @@ namespace Lab3_MVVM.Lab3_MVVM_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "Lab3_MVVM.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "Lab3_MVVM.Converters.ObjectExistsToVisible";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "Lab3_MVVM.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[5] = "Lab3_MVVM.ViewModels.OrganizationViewModel";
+            _typeNameTable[6] = "Lab3_MVVM.ViewModels.NotificationBase";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::Lab3_MVVM.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::Lab3_MVVM.Converters.ObjectExistsToVisible);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::Lab3_MVVM.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[5] = typeof(global::Lab3_MVVM.ViewModels.OrganizationViewModel);
+            _typeTable[6] = typeof(global::Lab3_MVVM.ViewModels.NotificationBase);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +183,9 @@ namespace Lab3_MVVM.Lab3_MVVM_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::Lab3_MVVM.MainPage(); }
+        private object Activate_0_ObjectExistsToVisible() { return new global::Lab3_MVVM.Converters.ObjectExistsToVisible(); }
+        private object Activate_2_MainPage() { return new global::Lab3_MVVM.MainPage(); }
+        private object Activate_6_NotificationBase() { return new global::Lab3_MVVM.ViewModels.NotificationBase(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,30 +197,76 @@ namespace Lab3_MVVM.Lab3_MVVM_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Lab3_MVVM.MainPage
-                userType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  Lab3_MVVM.Converters.ObjectExistsToVisible
+                userType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_ObjectExistsToVisible;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Object
                 xamlType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  Lab3_MVVM.MainPage
+                userType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_2_MainPage;
+                userType.AddMemberName("Organization");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Lab3_MVVM.ViewModels.OrganizationViewModel
+                userType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Lab3_MVVM.ViewModels.NotificationBase"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Lab3_MVVM.ViewModels.NotificationBase
+                userType = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_6_NotificationBase;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;
         }
 
 
+        private object get_0_MainPage_Organization(object instance)
+        {
+            var that = (global::Lab3_MVVM.MainPage)instance;
+            return that.Organization;
+        }
+        private void set_0_MainPage_Organization(object instance, object Value)
+        {
+            var that = (global::Lab3_MVVM.MainPage)instance;
+            that.Organization = (global::Lab3_MVVM.ViewModels.OrganizationViewModel)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Lab3_MVVM.MainPage.Organization":
+                userType = (global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Lab3_MVVM.MainPage");
+                xamlMember = new global::Lab3_MVVM.Lab3_MVVM_XamlTypeInfo.XamlMember(this, "Organization", "Lab3_MVVM.ViewModels.OrganizationViewModel");
+                xamlMember.Getter = get_0_MainPage_Organization;
+                xamlMember.Setter = set_0_MainPage_Organization;
+                break;
+            }
             return xamlMember;
         }
     }

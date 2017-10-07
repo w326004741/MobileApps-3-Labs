@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace Lab3_MVVM.ViewModels
 {
-    class OrganizationViewModel : NotificationBase
+    public class OrganizationViewModel : NotificationBase
     {
         Organization organization;
         public OrganizationViewModel(String name)

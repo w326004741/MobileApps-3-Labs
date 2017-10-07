@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Lab3_MVVM.Models;
+using Lab3_MVVM.ViewModels;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -22,9 +11,15 @@ namespace Lab3_MVVM
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public MainPage()
+        public MainPage() 
         {
             this.InitializeComponent();
+            Organization = new OrganizationViewModel("Office");
+         
         }
+
+     
+        public OrganizationViewModel Organization { get; set; }
     }
+    
 }

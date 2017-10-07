@@ -9,7 +9,7 @@ namespace Lab3_MVVM.Models
 {
     
 
-    class Organization
+    public class Organization
     {
         public List<Person> People { get; set; }
         public String Name { get; set; }

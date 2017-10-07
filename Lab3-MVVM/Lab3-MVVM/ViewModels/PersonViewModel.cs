@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab3_MVVM.ViewModels
 {
-    class PersonViewModel : NotificationBase<Person>
+    public class PersonViewModel : NotificationBase<Person>
     {
         public PersonViewModel(Person person = null) : base(person) { }
         public String Name

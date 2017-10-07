@@ -111,7 +111,6 @@ C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\System.Xml.ReaderWrit
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\System.Xml.XDocument.dll
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\Lab3-MVVM.csprojResolveAssemblyReference.cache
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\App.g.i.cs
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\App.g.cs
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\MainPage.g.i.cs
@@ -190,3 +189,4 @@ C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\qualifiers.txt
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\qualifiers.txt.intermediate
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\ProjectArchitectures.txt
+C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\obj\x86\Debug\Lab3-MVVM.csprojResolveAssemblyReference.cache
