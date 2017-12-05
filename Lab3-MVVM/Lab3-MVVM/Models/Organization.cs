@@ -16,8 +16,7 @@ namespace Lab3_MVVM.Models
 
         public Organization(String databaseName)
         {
-            Name = databaseName;
-            
+            Name = databaseName;            
             People = FakeService.GetPeople();
         }
 

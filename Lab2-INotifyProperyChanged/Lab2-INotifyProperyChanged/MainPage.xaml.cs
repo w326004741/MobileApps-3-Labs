@@ -18,9 +18,6 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Lab2INotifyProperyChanged
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         //create Data Model
@@ -30,6 +27,7 @@ namespace Lab2INotifyProperyChanged
             //give the page a data context
             this.InitializeComponent();
             DataContext = calc; // give the page a data context
+                                //因为Adder继承了INotifyPropertyChanged，所以DataContext = cals;
         }
 
         private void btnChange_Click(object sender, RoutedEventArgs e)
@@ -42,13 +40,14 @@ namespace Lab2INotifyProperyChanged
 
         private void tblAnswer_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
     }
 
-    public class Adder : INotifyPropertyChanged
-        {
+    public class Adder : INotifyPropertyChanged //Adder继承了INotifyPropertyChanged
+    {
             public event PropertyChangedEventHandler PropertyChanged;
+
             private int arg1;
             public int Arg1
             {

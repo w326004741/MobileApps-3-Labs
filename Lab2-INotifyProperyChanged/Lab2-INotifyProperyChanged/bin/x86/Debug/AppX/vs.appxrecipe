@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\迅雷下载\Projects\Lab2-INotifyProperyChanged\Lab2-INotifyProperyChanged\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T09:45:17.218</Modified>
+      <Modified>2017-10-03T15:23:24.883</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab2-INotifyProperyChanged\Lab2-INotifyProperyChanged\bin\x86\Debug\Lab2-INotifyProperyChanged.exe">
       <PackagePath>entrypoint\Lab2-INotifyProperyChanged.exe</PackagePath>
-      <Modified>2017-10-03T09:45:16.366</Modified>
+      <Modified>2017-10-03T15:23:21.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\weichenwang\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab2-INotifyProperyChanged\Lab2-INotifyProperyChanged\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-03T09:45:16.973</Modified>
+      <Modified>2017-10-03T15:23:24.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab2-INotifyProperyChanged\Lab2-INotifyProperyChanged\bin\x86\Debug\Core\Lab2-INotifyProperyChanged.exe">
       <PackagePath>Lab2-INotifyProperyChanged.exe</PackagePath>
-      <Modified>2017-10-03T09:45:17.211</Modified>
+      <Modified>2017-10-03T15:23:24.875</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

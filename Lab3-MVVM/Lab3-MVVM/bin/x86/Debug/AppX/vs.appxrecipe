@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-07T14:20:27.973</Modified>
+      <Modified>2017-12-05T18:12:15.721</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\Lab3-MVVM.exe">
       <PackagePath>entrypoint\Lab3-MVVM.exe</PackagePath>
-      <Modified>2017-10-07T14:20:25.873</Modified>
+      <Modified>2017-12-05T18:12:08.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\weichenwang\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-10-07T14:20:27.547</Modified>
+      <Modified>2017-11-21T12:30:20.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\迅雷下载\Projects\Lab3-MVVM\Lab3-MVVM\bin\x86\Debug\Core\Lab3-MVVM.exe">
       <PackagePath>Lab3-MVVM.exe</PackagePath>
-      <Modified>2017-10-07T14:20:27.966</Modified>
+      <Modified>2017-12-05T18:12:15.613</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
